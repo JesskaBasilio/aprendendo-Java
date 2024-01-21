@@ -1,20 +1,24 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class PrecoMetroArea {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int a;
-		a = sc.nextInt();
+		double largura = sc.nextDouble();
+		double comprimento = sc.nextDouble();
+		double metroQuadrado = sc.nextDouble();
 		
-		int area = a * a;
+		double area = largura * comprimento;
+		double preco = area * metroQuadrado;
 		
-		System.out.print("Area: " + area + " metros quadrados");
+		System.out.printf("Area: %.2f%n", area);
+		System.out.printf("Preco: %.2f", preco);
 		
 		sc.close();
-		
 
 	}
 
