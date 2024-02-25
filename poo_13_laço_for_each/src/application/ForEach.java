@@ -12,6 +12,8 @@ public class ForEach {
 		
 		System.out.println("------------------------");
 		
+		//Lê-se: para cada objeto 'obj' contido no vetor 'vect', faça:
+		
 		for (String obj : vect) {
 			System.out.println(obj);
 		}
