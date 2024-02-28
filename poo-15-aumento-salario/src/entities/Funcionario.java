@@ -2,9 +2,9 @@ package entities;
 
 public class Funcionario {
 	
-	private int id;
-	public String name;
-	public double salary;
+	private Integer id;
+	private String name;
+	private double salary;
 	
 	public Funcionario() {
 		
@@ -45,6 +45,10 @@ public class Funcionario {
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+	
+	public void increaseSalary(double percentage) {
+		salary = salary + salary * percentage / 100;
 	}
 	
 	

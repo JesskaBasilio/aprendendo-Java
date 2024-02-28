@@ -1,9 +1,55 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Funcionario;
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		List<Funcionario> list = new ArrayList<>();
+		
+		System.out.println("How many employees will be registered? ");
+		int N = sc.nextInt();
+		
+		for (int i = 0; i < N; i++) {
+			System.out.println();
+			System.out.print("Employee #" + (i+1)+ ":");
+			System.out.print("ID: ");
+			Integer id = sc.nextInt();
+			System.out.print("Name: ");
+			String name = sc.nextLine();
+			sc.nextLine();			
+			System.out.print("Salary: ");
+			Double salary = sc.nextDouble();
+			
+			Funcionario emp = new Funcionario(id, name, salary);
+			
+			list.add(emp);
+			
+		}
+		
+		
+		
+		
+		
+		sc.close();
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
 		/* Fazer um programa para ler um número inteiro N e depois os dados
 		 * (id, nome e salario) de N funcionários. Não deve ter repetição de
 		 * id.
@@ -69,6 +115,8 @@ public class Program {
 		 * 536, Alex Grey, 3300.00
 		 * 
 		 * */
+		
+		
 
 	}
 
