@@ -34,6 +34,7 @@ public class Program {
 			list.add(emp);			
 		}
 		
+		System.out.println();
 		System.out.println("Enter the employee id that will have salary increase: ");
 		int idsalary = sc.nextInt();
 		
